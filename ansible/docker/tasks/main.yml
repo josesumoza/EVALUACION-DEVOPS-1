@@ -1,0 +1,34 @@
+---
+- name: Install docker
+  shell: curl https://get.docker.com | sh
+
+- name: Modify privilege
+  become: true
+  shell: usermod -aG docker $USER
+
+- name: Change privilege of docker
+  become: true
+  file: dest=/usr/bin/docker mode=+x
+
+- name: python docker / docker-compse module
+  pip:
+    name:
+        - docker
+        - docker-compose
+- name: Install docker
+  shell: curl https://get.docker.com | sh
+
+- name: Modify privilege
+  become: true
+  shell: usermod -aG docker $USER
+  shell: usermod -aG docker vagrant
+
+- name: Change privilege of docker
+  become: true
+  command: chmod +x /usr/bin/docker
+
+- name: python docker / docker-compose module
+  pip:
+    name:
+        - docker
+        - docker-compose

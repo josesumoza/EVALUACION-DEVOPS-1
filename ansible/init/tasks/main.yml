@@ -1,0 +1,11 @@
+---
+- name: añadir user vagrant.
+  user:
+    name: vagrant
+    append: true
+
+- name: Install Pip.
+  apt: name=python-pip state=present
+
+- name: Install Docker Python library.
+  pip: name=docker state=present

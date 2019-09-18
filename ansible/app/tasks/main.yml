@@ -1,0 +1,23 @@
+---
+- name: Desplegar APP
+  docker_image:
+    name: server-nginx
+    build:
+        path: app/nginx
+    state: present
+
+- name: Running the container
+  docker_container:
+    image: server-nginx:latest
+    name: server-nginx
+  #  path: app
+    state: started
+    ports:
+    - "80:80"
+    expose:
+    - 80
+
+- name: Check if container is running
+  shell: docker ps -a
+  shell: docker images
+  shell: docker ps
