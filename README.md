@@ -1,6 +1,6 @@
 # EVALUACION-DEVOPS-1
 
-el siguente codigo permite desplegar una VM, instalar ansible, docker y desplegar un servicio web, de la evalauacion asiganda se cumplen los siguientes puntos.
+el siguente codigo permite desplegar una VM, instalar ansible, docker y desplegar un servicio web, de la evaluacion asignada se cumplen los siguientes puntos.
 
 
 A: creacion de una máquina virtual con Vagrant y provisionar un docker engine con Ansible usando ansible-playbook
