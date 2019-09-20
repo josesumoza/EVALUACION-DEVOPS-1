@@ -28,3 +28,5 @@ C: Crear un repositorio en Github con todos los archivos necesarios para crear l
 
 
 luego de ejecutar "vagrant up" sobre la carpeta que contiene este proyecto podrá tener acceso al servidor de nginx desplegado viendo la pagina de php info a través de esta URL http://127.0.0.1:8080/
+
+para iniciar el servidor de gitlab entrar a la carpeta "gitlab server" y ejecutar vagrant up este VM contiene el servicio de gitlab ce y gitlab ci para automatizar el despliegue y control de codigo
