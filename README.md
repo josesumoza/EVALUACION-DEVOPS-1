@@ -29,4 +29,8 @@ C: Crear un repositorio en Github con todos los archivos necesarios para crear l
 
 luego de ejecutar "vagrant up" sobre la carpeta que contiene este proyecto podrá tener acceso al servidor de nginx desplegado viendo la pagina de php info a través de esta URL http://127.0.0.1:8080/
 
-para iniciar el servidor de gitlab entrar a la carpeta "gitlab server" y ejecutar vagrant up este VM contiene el servicio de gitlab ce y gitlab ci para automatizar el despliegue y control de codigo
+para iniciar el servidor de gitlab entrar a la carpeta "gitlab server" y ejecutar vagrant up este VM contiene el servicio de gitlab ce y gitlab ci para automatizar el despliegue y control de codigo, pendiente configuracion final del servicio. URL http://10.10.10.20
+ 
+la carpeta k8s-vagrant contiene el proyecto para desplegar cluster de kubernetes sobre vagrant, la idea es sobre este cluster desplegar todos los servicio anteriores (server web, gitlab, CI) y crear un flujo completo sobre kubernetes, aun pendiente por terminar. para iniciar el cluster entrar a la carpeta k8s-vagrant y ejecutar vagrant up
+
+saludos
