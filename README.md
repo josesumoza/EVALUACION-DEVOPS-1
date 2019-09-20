@@ -33,7 +33,7 @@ para iniciar el servidor de gitlab entrar a la carpeta "gitlab server" y ejecuta
 
 la carpeta k8s-vagrant contiene el proyecto para desplegar cluster de kubernetes sobre vagrant, la idea es sobre este cluster desplegar todos los servicio anteriores (server web, gitlab, CI) y crear un flujo completo sobre kubernetes, aun pendiente por terminar. para iniciar el cluster entrar a la carpeta k8s-vagrant y ejecutar vagrant up
 
-Nota: este proyecto fue ejecutado bajo virtualBox 6.0
+Nota: este proyecto fue ejecutado bajo virtualBox 6.0 y vagrant 2.2.5
 
 
 saludos
